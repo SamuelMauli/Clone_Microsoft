@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Microsoft Official Homepage</title>
+  </head>
+
+  <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+      <!--nav-->
+      <nav class="main-nav">
+        <img src="img2/logo.png" alt="Microsoft" class="logo" />
+
+        <ul class="main-menu">
+          <li><a href="index.html">Office</a></li>
+          <li><a href="Windowns.html">Windows</a></li>
+          <li><a href="xbox.html">Xbox</a></li>
+          <li><a href="support.html">Support</a></li>
+      </ul>
+
+        <ul class="right-menu">
+          <li>
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="support-form">
+        <h3>Formulário de Pedido de Suporte</h3>
+        <form id="support-request-form">
+          <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div>
+            <label for="description">Descrição do Problema:</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <label for="priority">Prioridade:</label>
+            <select id="priority" name="priority">
+              <option value="baixa">Baixa</option>
+              <option value="média">Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+          <div>
+            <label for="operating-system">Sistema Operacional:</label>
+            <input type="text" id="operating-system" name="operating-system" />
+          </div>
+          <div>
+            <label for="attachment">Anexar Arquivo:</label>
+            <input type="file" id="attachment" name="attachment" />
+          </div>
+          <div>
+            <label for="contact-method">Método de Contato Preferencial:</label>
+            <input
+              type="radio"
+              id="contact-email"
+              name="contact-method"
+              value="email"
+              checked
+            />
+            <label for="contact-email">E-mail</label>
+            <input
+              type="radio"
+              id="contact-phone"
+              name="contact-method"
+              value="phone"
+            />
+            <label for="contact-phone">Telefone</label>
+          </div>
+          <div>
+            <label for="terms-agreement"
+              >Eu concordo com os termos e condições:</label
+            >
+            <input
+              type="checkbox"
+              id="terms-agreement"
+              name="terms-agreement"
+              required
+            />
+          </div>
+          <div>
+            <button type="submit">Enviar Pedido</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Support Requests Table -->
+      <div class="support-requests">
+        <h3>Registros de Pedidos de Suporte</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Assunto</th>
+              <th>Descrição</th>
+              <th>Prioridade</th>
+              <th>Sistema Operacional</th>
+              <th>Método de Contato</th>
+            </tr>
+          </thead>
+          <tbody id="support-requests-data">
+            <tr>
+              <td>João Silva</td>
+              <td>joao@example.com</td>
+              <td>Problema com Office</td>
+              <td>Não consigo abrir o Word.</td>
+              <td>Alta</td>
+              <td>Windows 10</td>
+              <td>E-mail</td>
+            </tr>
+            <tr>
+              <td>Maria Souza</td>
+              <td>maria@example.com</td>
+              <td>Problema com Surface</td>
+              <td>Surface não liga.</td>
+              <td>Média</td>
+              <td>Windows 8</td>
+              <td>Telefone</td>
+            </tr>
+            <tr>
+              <td>Ana Rodrigues</td>
+              <td>ana@example.com</td>
+              <td>Problema com Windows</td>
+              <td>Atualização do Windows não está funcionando.</td>
+              <td>Alta</td>
+              <td>Windows 11</td>
+              <td>E-mail</td>
+            </tr>
+            <tr>
+              <td>Carlos Santos</td>
+              <td>carlos@example.com</td>
+              <td>Problema com Office</td>
+              <td>Excel está travando ao abrir.</td>
+              <td>Média</td>
+              <td>Windows 10</td>
+              <td>Telefone</td>
+            </tr>
+            <tr>
+              <td>Lúcia Fernandes</td>
+              <td>lucia@example.com</td>
+              <td>Problema com Surface</td>
+              <td>Touchscreen não está respondendo.</td>
+              <td>Baixa</td>
+              <td>Windows 8</td>
+              <td>E-mail</td>
+            </tr>
+            <tr>
+              <td>Pedro Alves</td>
+              <td>pedro@example.com</td>
+              <td>Problema com Xbox</td>
+              <td>Não consigo conectar ao Xbox Live.</td>
+              <td>Média</td>
+              <td>Xbox Series X</td>
+              <td>Telefone</td>
+            </tr>
+            <tr>
+              <td>Sofia Lima</td>
+              <td>sofia@example.com</td>
+              <td>Problema com Windows</td>
+              <td>Erros ao inicializar o Windows.</td>
+              <td>Alta</td>
+              <td>Windows 10</td>
+              <td>E-mail</td>
+            </tr>
+            <tr>
+              <td>José Almeida</td>
+              <td>jose@example.com</td>
+              <td>Problema com Surface</td>
+              <td>Tela quebrada no Surface Pro.</td>
+              <td>Baixa</td>
+              <td>Windows 8</td>
+              <td>Telefone</td>
+            </tr>
+            <tr>
+              <td>Mariana Santos</td>
+              <td>mariana@example.com</td>
+              <td>Problema com Office</td>
+              <td>Word está travando ao salvar documentos.</td>
+              <td>Média</td>
+              <td>Windows 10</td>
+              <td>E-mail</td>
+            </tr>
+            <tr>
+              <td>Fernando Oliveira</td>
+              <td>fernando@example.com</td>
+              <td>Problema com Xbox</td>
+              <td>Não consigo instalar jogos no Xbox.</td>
+              <td>Alta</td>
+              <td>Xbox Series X</td>
+              <td>Telefone</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <script>
+        const supportRequestForm = document.getElementById(
+          "support-request-form"
+        );
+        const supportRequestsData = document.getElementById(
+          "support-requests-data"
+        );
+
+        supportRequestForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          // Obter valores do formulário
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const subject = document.getElementById("subject").value;
+          const description = document.getElementById("description").value;
+          const priority = document.getElementById("priority").value;
+          const operatingSystem =
+            document.getElementById("operating-system").value;
+          const contactMethod = document.querySelector(
+            'input[name="contact-method"]:checked'
+          ).value;
+
+          // Criar uma nova linha na tabela com os dados do formulário
+          const newRow = supportRequestsData.insertRow();
+          newRow.innerHTML = `
+                    <td>${name}</td>
+                    <td>${email}</td>
+                    <td>${subject}</td>
+                    <td>${description}</td>
+                    <td>${priority}</td>
+                    <td>${operatingSystem}</td>
+                    <td>${contactMethod}</td>
+                `;
+
+          // Limpar o formulário
+          supportRequestForm.reset();
+        });
+      </script>
+
+<!-- Carbono -->
+<section class="carbon dark">
+  <div class="content">
+      <h2>Compromisso com o Carbono Negativo</h2>
+      <p>A Microsoft será carbono negativa até 2030 e até 2050 removerá todo o carbono emitido pela empresa desde sua fundação em 1975</p>
+      <a href="#" class="btn">Saiba Mais <i class="fas fa-chevron-right"></i></a>
+  </div>
+</section>
+
+      <!-- Seguir -->
+<section class="follow">
+  <p>Siga a Microsoft</p>
+  <a href="https://facebook.com"
+      ><img src="img2/social-fb.png" alt="Facebook" />
+  </a>
+  <a href="https://twitter.com"
+      ><img src="img2/social-twitter.png" alt="Twitter" />
+  </a>
+  <a href="https://linkedin.com"
+      ><img src="img2/social-linkedin.png" alt="Linkedin" />
+  </a>
+</section>
+</div>
+<!-- Links -->
+<section class="links">
+<div class="links-inner">
+  <ul>
+      <li>
+          <h3>O que há de novo</h3>
+      </li>
+      <li><a href="#">Surface Pro X</a></li>
+      <li><a href="#">Surface Laptop 3</a></li>
+      <li><a href="#">Surface Pro 7</a></li>
+      <li><a href="#">Aplicativos do Windows 10</a></li>
+      <li><a href="#">Aplicativos do Office</a></li>
+  </ul>
+  <ul>
+      <li>
+          <h3>Microsoft Store</h3>
+      </li>
+      <li><a href="#">Perfil da Conta</a></li>
+      <li><a href="#">Central de Downloads</a></li>
+      <li><a href="#">Suporte da Microsoft Store</a></li>
+      <li><a href="#">Devoluções</a></li>
+      <li><a href="#">Rastreamento Antigo</a></li>
+  </ul>
+  <ul>
+      <li>
+          <h3>Educação</h3>
+      </li>
+      <li><a href="#">Microsoft na Educação</a></li>
+      <li><a href="#">Office para Estudantes</a></li>
+      <li><a href="#">Office 365 para Escolas</a></li>
+      <li><a href="#">Ofertas para Estudantes</a></li>
+      <li><a href="#">Microsoft Azure</a></li>
+  </ul>
+  <ul>
+      <li>
+          <h3>Empresas</h3>
+      </li>
+      <li><a href="#">Azure</a></li>
+      <li><a href="#">AppSource</a></li>
+      <li><a href="#">Automotivo</a></li>
+      <li><a href="#">Governo</a></li>
+      <li><a href="#">Saúde</a></li>
+  </ul>
+  <ul>
+      <li>
+          <h3>Desenvolvedor</h3>
+      </li>
+      <li><a href="#">Visual Studio</a></li>
+      <li><a href="#">Centro de Desenvolvedores do Windows</a></li>
+      <li><a href="#">Rede de Desenvolvedores</a></li>
+      <li><a href="#">TechNet</a></li>
+      <li><a href="#">Desenvolvedor da Microsoft</a></li>
+  </ul>
+  <ul>
+      <li>
+          <h3>Empresa</h3>
+      </li>
+      <li><a href="#">Carreiras</a></li>
+      <li><a href="#">Sobre a Microsoft</a></li>
+      <li><a href="#">Notícias da Empresa</a></li>
+      <li><a href="#">Privacidade na Microsoft</a></li>
+      <li><a href="#">Investidores</a></li>
+  </ul>
+</div>
+</section>
+
+<!-- Rodapé -->
+<footer class="footer">
+<div class="footer-inner">
+  <div><i class="fas fa-globe fa-2x"></i> Inglês (Estados Unidos)</div>
+  <ul>
+      <li><a href="#">Mapa do site</a></li>
+      <li><a href="#">Contato Microsoft</a></li>
+      <li><a href="#">Privacidade e Cookies</a></li>
+      <li><a href="#">Termos de Uso</a></li>
+      <li><a href="#">Marcas Registradas</a></li>
+      <li><a href="#">Segurança e Sustentabilidade</a></li>
+      <li><a href="#">Sobre nossos anúncios</a></li>
+      <li><a href="#">&copy; Microsoft 2020</a></li>
+  </ul>
+</div>
+</footer>
+
+    <script>
+      document
+        .querySelector(".menu-btn")
+        .addEventListener("click", () =>
+          document.querySelector(".main-menu").classList.toggle("show")
+        );
+    </script>
+  </body>
+</html>
