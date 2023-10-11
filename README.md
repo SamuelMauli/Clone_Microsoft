@@ -57,6 +57,7 @@ Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE.md par
 
 Meu nome é Samuel Mauli e sou um estudante de Ciência da Computação na Universidade Positivo. Sou um novo programador apaixonado por tecnologia e estou em busca de aprendizado constante para começar minha carreira como desenvolvedor.
 
-Se você deseja entrar em contato, me encontre no LinkedIn.
+Se você deseja entrar em contato, me encontre no LinkedIn
+https://www.linkedin.com/in/samuelmauli/.
 
 Obrigado por conferir o meu projeto!
