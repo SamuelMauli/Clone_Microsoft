@@ -3,6 +3,8 @@
 
 Este é um projeto de clone da página inicial da Microsoft, desenvolvido para um trabalho da faculdade. O clone foi criado utilizando apenas HTML e CSS para aprimorar as habilidades de design e desenvolvimento front-end.
 
+Para ver o projeto online acesse: https://samuelmauli.github.io/Clone_Microsoft/
+
 ## Tecnologias Utilizadas
 
 - HTML
